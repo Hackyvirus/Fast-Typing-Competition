@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        background: url("images/0.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
+      }
+      #take-userName {
+        background-size: cover;
+        overflow-x: hidden;
+        color: #000;
+        height: 30vh;
+        width: 60vw;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      #form1 {
+        font-size: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+      }
+
+      #userName {
+        height: 45px;
+        text-align: center;
+        border: 0;
+        background: #141414;
+        border-radius: 5px;
+        font-size: 25px;
+        color: white;
+      }
+      #userName:focus {
+        outline: 0;
+
+        border: 0;
+      }
+      #form1 > button {
+        height: 40px;
+        font-size: 23px;
+        color: grey;
+        cursor: pointer;
+        background: #1b1b1b;
+        border: 0;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="take-userName">
+      <form action="/" method="POST" id="form1">
+        <label for="1">Enter Your Name</label
+        ><input
+          autocomplete="off"
+          type="text"
+          name="name"
+          id="userName"
+        /><button onclick="sub()" type="submit">Done</button>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fast Typing King</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <img id="Lion-img" src="images/lion.png" alt="Lion Image" />
+    <img class="Lion-img" src="images/lion.png" alt="Lion Image" />
+    <img id="Monkey-img" src="images/monkey.png" alt="monkey Img" />
+
+    <div id="main-box">
+      <!-- header  -->
+      <div id="header">
+        <div id="logo">Bits N Bytes</div>
+        <div id="Title">
+          <span class="c1">Typing</span> <span class="c2">Speed</span>
+          <span class="c3">Test</span>
+        </div>
+        <span id="user_name"><%= name %></span>
+      </div>
+
+      <!-- main paragraph -->
+      <div id="main-para">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque facere
+        earum tenetur fugiat obcaecati! Sit eaque officia, natus dolorem sunt
+        aliquam vitae ullam quos, ab, pariatur obcaecati officiis! Repellendus
+        sit quae veniam aut nisi placeat ea! Delectus quaerat vitae doloremque
+        magni! Deserunt, consequuntur minus beatae optio molestias neque quas,
+        accusamus illum et ea unde sint impedit labore, ducimus eveniet numquam
+        consectetur? Officiis, vitae. Quae similique ullam a inventore numquam
+        aliquid voluptates eum quos harum dolorum autem aspernatur magni ab,
+        delectus error. Reiciendis at temporibus unde aperiam accusamus expedita
+        quaerat hic. Consectetur in qui odio iste reiciendis quibusdam tempora
+        accusamus. Cum placeat sunt cumque. Ut, repellat magnam omnis dicta
+        earum tempora laboriosam recusandae architecto.
+      </div>
+
+      <!-- footer  -->
+      <div id="main-footer">
+        <div id="timer-div">59</div>
+        <div id="input-div">
+          <input
+            type="text"
+            placeholder="Start typing here...."
+            autocomplete="off"
+            name="answer"
+            id="user-input"
+          />
+          <span id="feedback">Start The Game !!!!</span>
+        </div>
+        <div id="result-div">
+          <h2 class="c4" id="NOL">Number of Letters: <span id="NOL1"></span></h2>
+          <h2 class="c5" id="Acuracy">Your Acuracy: <span id="Acuracy1"></span></h2>
+          <h2 class="c6" id="speed">Word per Minute: <span id="speed1"></span></h2>
+        </div>
+      </div>
+    </div>
+    <div id="score">
+      <form id="result-submit" name="result-submit" action="/submit" method="post">
+        <input id="N" name="N" type="text" />
+        <input id="S" name="S" type="text" />
+        <button type="submit">submit</button>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

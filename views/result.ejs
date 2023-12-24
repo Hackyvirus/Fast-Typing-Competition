@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Result</title>
+    <style>
+      body {
+        background-color: #000;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: right;
+        height: 100vh;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      body > h1 {
+        font-size: 60px;
+      }
+      #score {
+        text-align: center;
+        font-size: 2rem;
+        color: #fff;
+      }
+      a {
+        text-decoration: #ffdead;
+        font-size: 30px;
+        color: #fff;
+      }
+      button {
+        margin: 35px;
+        background: #663399;
+        border: 0;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Congratulations <%= name %></h1>
+    <div id="score">Your Score: <%= score %></div>
+    <button><a href="/result">Check score</a></button>
+    <script src="script.js"></script>
+  </body>
+</html>
