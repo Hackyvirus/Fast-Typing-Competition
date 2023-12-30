@@ -44,6 +44,7 @@
         <div id="timer-div">59</div>
         <div id="input-div">
           <input
+            spellcheck="false"
             type="text"
             placeholder="Start typing here...."
             autocomplete="off"
@@ -53,14 +54,25 @@
           <span id="feedback">Start The Game !!!!</span>
         </div>
         <div id="result-div">
-          <h2 class="c4" id="NOL">Number of Letters: <span id="NOL1"></span></h2>
-          <h2 class="c5" id="Acuracy">Your Acuracy: <span id="Acuracy1"></span></h2>
-          <h2 class="c6" id="speed">Word per Minute: <span id="speed1"></span></h2>
+          <h2 class="c4" id="NOL">
+            Number of Letters: <span id="NOL1"></span>
+          </h2>
+          <h2 class="c5" id="Acuracy">
+            Your Acuracy: <span id="Acuracy1"></span>
+          </h2>
+          <h2 class="c6" id="speed">
+            Word per Minute: <span id="speed1"></span>
+          </h2>
         </div>
       </div>
     </div>
     <div id="score">
-      <form id="result-submit" name="result-submit" action="/submit" method="post">
+      <form
+        id="result-submit"
+        name="result-submit"
+        action="/submit"
+        method="post"
+      >
         <input id="N" name="N" type="text" />
         <input id="S" name="S" type="text" />
         <button type="submit">submit</button>
