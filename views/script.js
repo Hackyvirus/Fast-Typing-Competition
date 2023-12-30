@@ -58,7 +58,7 @@ function gameover() {
         }
 }
 
-let seconds = 15;
+let seconds = 60;
 function countdown(i) {
 
 
